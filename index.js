@@ -1,13 +1,14 @@
 const express = require('express')
 const app = express()
-const port = 3000
+
 const cors = require("cors");
+const port = 3000
 
 app.use = (cors());
 
-const news = require("./data/news.json");
-const categories = require("./data/Category.json");
 
+const categories = require("./data/Category.json");
+const news = require("./data/news.json");
 
 app.get("/",(req,res)=>{
     res.send("Hello Dragon")
